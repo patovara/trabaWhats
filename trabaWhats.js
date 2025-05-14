@@ -17,8 +17,9 @@ async function enviarScript(scriptText) {
 
         setTimeout(() => {
             (
-                main.querySelector(`[data-testid="send"]`) ||
-                main.querySelector(`[data-icon="send"]`)
+                main.querySelector(`[data-testid="Enviar"]`) ||
+                main.querySelector(`[data-icon="Enviar"]`)||
+                main.querySelector(`[aria-label="Enviar"]`)
             ).click();
         }, 100);
 
